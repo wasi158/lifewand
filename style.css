@@ -180,13 +180,13 @@ margin: 0px;
 
 /* Button */
 .hero-content .btn {
-  width: 52%;
-  padding: 20px 6px;
+  width: 30%;
+  padding: 10px 6px;
   background: #4787F3;
   color: white;
   text-decoration: none;
   border-radius: 60px;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 400;
   transition: background 0.3s ease;
 }
