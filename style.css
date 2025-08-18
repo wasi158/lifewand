@@ -177,7 +177,7 @@ margin: 0px;
 /* Section with background image */
 
 .section {
-  background: url('/assets/featured.jpg') no-repeat center center;
+  background: url('assets/featured.jpg') no-repeat center center;
   background-size: cover;
   display: flex;
   justify-content: flex-end; /* Push content to the right */
