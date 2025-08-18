@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lifewand</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="top_bar">
+      <h6>Lifewand is designed for real parents, real pressure, and real emergencies.</h6>
+    </div>
+
+    <header class="navbar">
+      <div class="logo">
+        <img src="assets/logo.svg" alt="lifewand logo"> 
+      </div>
+
+      <!-- Toggle button (only visible on mobile) -->
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+
+      <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="#">How to use</a>
+        <a href="#" id="openRegister">Register your product</a>
+        <a href="#">FAQ</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Modal -->
+    <div class="modal" id="registerModal">
+      <div class="modal-content">
+        <img src="assets/logo.svg" alt="">
+        <span class="close-btn" id="closeModal">&times;</span>
+        <h2>Register Your New Product</h2>
+        <p>Register your product to receive a lifetime warrantyץ</p>
+        <form>
+          <label for="productName">Product Name</label>
+          <input type="text" id="productName" required />
+
+          <label for="MobileNumber">Mobile Number</label>
+          <input type="text" id="serialNumber" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" required />
+
+          <button type="submit">Send and Register</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Hero_Section -->
+    <section class="hero">
+      <video autoplay muted loop playsinline class="hero-video">
+        <source src="assets/Video_Events.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <div class="hero-overlay">
+        <div class="hero-content">
+          <img src="assets/Headline 1.png" alt="">
+          <h1>Lifewand is the safest, easiest-to-use vacuum rescue device giving you the power to act when every second counts.</h1>
+          <a href="#" class="btn">See How It Works</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured_Section -->
+    <div class="Featured_Section">
+      <h1 class="featured-title">
+        Clinically tested. FDA-listed. Trusted by parents.
+      </h1>
+
+      <section class="section">
+        <div class="content">
+          <ul>
+            <li>
+              <strong class="para1">Don't compromise on your kids safety</strong>
+            </li>
+            <li>
+              <strong class="highlight">Consistent Vacuum<span>Level</span></strong> 
+              The only device that guarantees a <span class="sub_highlight">consistent vacuum</span> level no matter who operates it
+            </li>
+            <li>
+              <strong class="Materials">Hospital-Grade <span>Materials</span></strong>
+              Crafted with top-tier materials for durability and reliability.
+            </li>
+            <li>
+              <strong>One-Handed Simplicity</strong>
+              Designed for parents under pressure.
+            </li>
+            <li>
+              <strong>Built-In Safety Locks</strong>
+              Built with advanced safeguards for worry-free use.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- See It in Action Section -->
+      <section class="see-section">
+        <h2>See It in Action</h2>
+
+        <!-- Steps -->
+        <div class="steps">
+          <div class="step">
+            <img src="assets/see1.svg" alt="Call Emergency">
+            <p><span>Step 1:</span> Call emergency services</p>
+          </div>
+          <div class="step">
+            <img src="assets/see2.svg" alt="Place Device">
+            <p><span>Step 2:</span> Place device on the red strip</p>
+          </div>
+          <div class="step">
+            <img src="assets/see4.svg" alt="Palm Over Palm">
+            <p><span>Step 3:</span> Palm over Palm</p>
+          </div>
+          <div class="step">
+            <img src="assets/see3.svg" alt="Chest Press">
+            <p><span>Step 4:</span> Chest press</p>
+          </div>
+          <div class="step">
+            <img src="assets/see5.svg" alt="Mask Press">
+            <p><span>Step 5:</span> Place the mask over the face and press</p>
+          </div>
+        </div>
+
+        <!-- Image -->
+        <div class="image-box">
+          <img src="assets/see.png" alt="See it in Action Image">
+        </div>
+      </section>
+
+      <!-- FAQ Section -->
+      <section class="faq-section">
+        <h2>Frequently asked questions</h2>
+
+        <div class="accordion">
+          <!-- Item 1 -->
+          <div class="accordion-item">
+            <button class="accordion-header">
+              Q1 How do I know the Lifewand is working properly?
+              <span class="icon">-</span>
+            </button>
+            <div class="accordion-body active">
+              <p>Sign up to discover human stories that deepen your understanding of the world!</p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="accordion-item">
+            <button class="accordion-header">
+              Q2 Can I reuse it?
+              <span class="icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <p>Yes, the device can be reused after proper cleaning and storage.</p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="accordion-item">
+            <button class="accordion-header">
+              Q3 Is it safe for infants or toddlers?
+              <span class="icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <p>Yes, it is designed with safety measures suitable for infants and toddlers.</p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="accordion-item">
+            <button class="accordion-header">
+              Q4 How do I clean or store the device?
+              <span class="icon">+</span>
+            </button>
+            <div class="accordion-body">
+              <p>Clean with mild soap and water, dry completely, and store in a cool, dry place.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact_Section -->
+      <section class="contact-section">
+        <h2>Contact us</h2>
+        <form class="contact-form">
+          <input type="text" placeholder="Full name *" required>
+          <input type="email" placeholder="Email *" required>
+          <div class="select-wrapper">
+            <select required>
+              <option value="">Subject</option>
+              <option value="support">Support</option>
+              <option value="sales">Sales</option>
+              <option value="general">General</option>
+            </select>
+          </div>
+          <textarea rows="6" placeholder="Your message"></textarea>
+          <button type="submit">Send message</button>
+        </form>
+
+        <footer class="footer">
+          <div class="footer-item">
+            <img src="assets/logo.svg" alt="lifewand logo" class="logo">
+            <p>Keeping kids safe with innovative technology</p>
+          </div>
+
+          <div class="footer-item">
+            <h4>Contact info:</h4>
+            <p>admin@lifewand.com<br>72Beast | 35 St, Bronx, NY 10454</p>
+          </div>
+
+          <div class="footer-item">
+            <h4>Become a distributor:</h4>
+            <p>sales@lifewand.com</p>
+          </div>
+
+          <div class="footer-item">
+            <h4>Follow us:</h4>
+            <img src="assets/facebook.png" alt="">
+          </div>
+        </footer>
+      </section>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="script.js"></script>
+  <script src="/LifeWand-Faqs.js"></script>
+  <script src="/LifeWand.html"></script>
+  <script src="/modal.js"></script>
+  <script src="/navbar-toggle.js"></script>
+</body>
+</html>
