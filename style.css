@@ -4,15 +4,15 @@ body {
   margin: 0px;
 }
 
-.container {
-  max-width: 1440px;
+.main_container {
+  max-width: 100% !important;
   margin: 0 auto;
-  padding: 10px;
+
 }
 
-
-.top_bar {
-background-color: #FFFFFF
+.container{
+max-width: 1140px;
+margin: auto;
 }
 .top_bar h6{
 font-size: 20px;
@@ -41,21 +41,13 @@ margin: 0px;
   width: 124px;
 }
 
-/* Navigation (desktop default) */
-.nav-links {
-  display: flex;
-  gap: 20px; /* gap between each link group */
-}
-
 .nav-links a {
   color: white;
   text-decoration: none;
   font-size: 20px;
   font-weight: 400;
-
   border-right: 2px solid white;  /* white border on right */
-  padding-right: 10px;            /* space between text and border */
-  margin-right: 10px;             /* space after the border */
+  padding: 0 14px;
 }
 
 /* Remove border from last link */
@@ -119,21 +111,56 @@ margin: 0px;
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 10px 5px 5px 5px;
+  padding: 20px 5px 25px 5px;
   background: white;
-  max-width: 700px;
+  max-width: 980px;
   box-shadow: 0px 8px 20px rgba(0,0,0,0.2);
-  border-radius: 12px;
+  border-radius: 30px;
   position: relative;
   top:90px
 }
-
-/* Content Card */
 .hero-content {
-  padding: 18px 20px 18px 20px;
-  margin: 0 20px;
-  text-align: center;
+  text-align: center; /* or left/right depending on design */
 }
+
+.hero-title {
+  font-size: 56px;
+  font-weight: 900;
+  margin: 0;
+  color: black;
+  line-height: 1.2;
+  padding-bottom: 20px 10px 20px 10px;
+}
+
+.hero-text-btn {
+  display: flex;
+  align-items: center;
+  gap: 20px; /* spacing between text and button */
+  padding: 10px 40px 0px 40px;
+  
+}
+
+.hero-subtitle {
+  text-align: left;
+  margin: 0;
+  font-weight: 400;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background: #007bff; /* change color */
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.btn:hover {
+  background: #0056b3;
+}
+/* Content Card */
 
 /* Image inside content */
 .hero-content img {
@@ -141,13 +168,7 @@ margin: 0px;
   max-width: 500px;
 }
 
-/* Heading */
-.hero-content h1 {
-  font-size: 22px;
-  font-weight: 400;
-  color: #000;
- 
-}
+
 
 /* Paragraph */
 .hero-content p {
@@ -159,13 +180,13 @@ margin: 0px;
 
 /* Button */
 .hero-content .btn {
-  display: inline-block;
-  padding: 10px 30px;
+  width: 52%;
+  padding: 20px 6px;
   background: #4787F3;
   color: white;
   text-decoration: none;
-  border-radius: 20px;
-  font-size: 18px;
+  border-radius: 60px;
+  font-size: 22px;
   font-weight: 400;
   transition: background 0.3s ease;
 }
@@ -177,49 +198,41 @@ margin: 0px;
 /* Section with background image */
 
 .section {
-  background: url('assets/featured.jpg') no-repeat center center;
-  background-size: cover;
   display: flex;
-  justify-content: flex-end; /* Push content to the right */
-  align-items: center;
+  justify-content: space-between;
   padding: 60px;
   min-height: 500px;
-  color: #000;
-  position: relative;
-  
+  margin: auto; 
 }
-.featured-title {
-  font-size: 48px;
-  font-weight: 400;
-  width: 50%;
-  margin: auto;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  text-align: center;
+
+/* Image box */
+.image-box {
+  flex: 1;
+}
+.image-box img {
+  width: 120%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
 }
 
 /* Content box */
 .content {
+  flex: 1;
   max-width: 500px;
-  padding: 30px;
-  border-radius: 12px;
-}
-
-.content h2 {
-  font-size: 22px;
-  margin-bottom: 20px;
+  padding: 60px 30px;
+  
 }
 
 .content ul {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: -10px 0 0 0;
 }
 
 .content li {
-  margin-bottom: 15px;
-  font-size:20px;
-  line-height: 1.5;
+  margin-bottom: 5px;
+  font-size: 19px;
 }
 
 .content li strong {
@@ -227,42 +240,42 @@ margin: 0px;
   color: #000;
 }
 
+/* Typography styles */
 .highlight {
   color: #F93549 !important;
-  font-weight: bold;
   font-size: 32px;
   font-weight: 500;
 }
-.highlight span{
-color: #000;
+.highlight span {
+  color: #000;
 }
-.Materials{
-font-size: 22px;
-font-weight: 500;
-color: #000000;
+.Materials {
+  font-size: 22px;
+  font-weight: 500;
+  color: #000;
 }
-.Materials span{
-font-size: 32px;
-font-weight: 500;
-color: #000000;
+.Materials span {
+  font-size: 32px;
+  font-weight: 500;
+  color: #000;
 }
 .sub_highlight {
   color: #F93549 !important;
   font-weight: bold;
-  
 }
-.para1{
-font-size: 32px;
-font-weight: 400; 
-color: #000000;
-line-height: 90%;
-width: 70%;
+.para1 {
+  font-size: 32px;
+  font-weight: 400; 
+  color: #000;
+  line-height: 1.2;
+  width: 70%;
 }
-strong{
-font-size: 32px;
-font-weight: 500;
-color: #000000;
+strong {
+  font-size: 32px;
+  font-weight: 500;
+  color: #000;
 }
+
 
 /* See_Section */
 
@@ -274,7 +287,7 @@ color: #000000;
   padding: 40px 20px;
 }
 
-.see-section h2 {
+.heading-2 {
   font-size: 48px;
   margin-bottom: 30px;
   font-weight: 500;
@@ -285,15 +298,12 @@ color: #000000;
   display: flex;
   justify-content: space-between; /* equal spacing */
   align-items: center;
-
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 
 }
 
 .step {
   text-align: center;
-  margin: 0 10px;
-  flex: 0 0 auto; /* prevent shrinking */
 }
 
 .step img {
@@ -302,11 +312,15 @@ color: #000000;
   object-fit: contain; /* keep aspect ratio inside box */
   display: block;
   margin: 0 auto 8px;
+  padding-bottom: 20px;
 }
 
 .step p {
-  font-size: 14px;
-  margin: 0;
+  border-top: 1px solid #FFFFFF;
+  padding-top: 10px;
+  margin: 0 10px;
+  font-size: 21px;
+  height: 55px;
 }
 
 .step span {
@@ -314,34 +328,23 @@ color: #000000;
   color: #fff;
 }
 
-/* Image box */
-.image-box {
-  display: inline-block;
-  max-width: 900px;
-  /* width: 100%; */
-  border: 12px solid #000;
-  border-radius: 46px;
-  overflow: hidden;
-}
-
-.image-box img {
+.section-video {
   width: 100%;
-  display: block;
+  height: auto;
+  border-radius: 12px; /* same as your image style */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
 /* Faq_Section */
 
 .faq-section {
-  max-width: 1000px;
   margin: 0 auto;
   text-align: center;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.faq-section h2 {
-  font-size: 48px;
-  margin-bottom: 20px;
-  font-weight: 400;
-}
+
 
 /* Accordion styles */
 .accordion {
@@ -393,21 +396,16 @@ color: #000000;
 }
 
 .contact-section {
-    background-color: #2F2F2F;
+  background-color: #2F2F2F;
   color: white;
   text-align: center;
   padding: 50px 20px;
-      font-family: 'Nunito Sans', sans-serif !important;
+  font-family: 'Nunito Sans', sans-serif !important;
 }
 
-.contact-section h2 {
-  font-size: 48px;
-  margin-bottom: 20px;
-  font-weight: 400;
-}
+
 
 .contact-form {
-  max-width: 1000px;
   margin: 0 auto 40px auto;
 }
 
@@ -453,7 +451,7 @@ width: 103% !important;
   justify-content: space-between;
   align-items: flex-start;
   gap: 40px; /* spacing between items */
-  max-width: 1000px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 20px;
   border-top: 1px solid #444;
@@ -556,12 +554,6 @@ font-weight: 400;
   color: #000;
 }
 
-/* Form styling */
-.modal-content h2 {
-  margin-bottom: 15px;
-  font-size: 32px;
-  font-weight: 400;
-}
 
 .modal-content p {
   margin-bottom: 15px;
@@ -599,10 +591,22 @@ font-weight: 400;
   transition: 0.3s;
 }
 
+
 .modal-content button:hover {
   background: #F93549;
   color: white;
   border: 1px solid white;
+}
+
+.featured_section{
+  background-color: #f6f6f6;
+}
+.featured{
+text-align: center;
+width: 50%;
+margin: auto;
+padding-top: 35px;
+
 }
 
 /* ============ Mobile Styles ============ */
@@ -643,6 +647,21 @@ font-weight: 400;
   .nav-links a {
 
   border-right:  none;}
+  
+.image-box img {
+  width: 100% ;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+.footer{
+flex-direction: column;
+gap: 0px;
+}
+
+.hero-text-btn{
+flex-wrap: wrap;
+}
 }
 @media (max-width: 768px) {
   .modal-content {
@@ -651,7 +670,7 @@ font-weight: 400;
     max-height: 90vh;   /* ✅ fit inside viewport */
     overflow-y: auto; 
   }
-  .modal-content h2 {
+  .heading-2 {
     font-size: 22px;
   }
   .modal-content input {
@@ -689,6 +708,10 @@ font-weight: 400;
   .nav-links a:last-child {
     border-bottom: none;
   }
+  .section {
+  flex-direction: column;
+  gap: 30px;
+  }
 }
 @media (max-width: 768px) {
   .hero-content {
@@ -706,11 +729,16 @@ font-weight: 400;
   .hero-overlay {
   top: 0;
   }
+  .hero-text-btn{
+  width: 100%;
+  padding: 0px;
+  }
 }
 
 @media (max-width: 480px) {
   .hero-content h1 {
-    font-size: 16px;
+    font-size: 21px;
+    padding-bottom: 10px;
   }
   .hero-content .btn {
     font-size: 12px;
@@ -752,6 +780,9 @@ text-align: left;
 .featured-title{
 width: 100%;
 font-size: 28px;
+}
+.featured{
+width: 100%;
 }
 .content{
 padding: 0px;
