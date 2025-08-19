@@ -58,10 +58,13 @@
 
     <!-- Hero_Section -->
     <section class="hero">
-      <video autoplay muted loop playsinline class="hero-video">
-        <source src="assets/Video_Events.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+     <div class="video-background">
+  <video autoplay muted loop playsinline class="hero-video">
+    <source src="/assets/HeaderVideo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+>
 
       <div class="hero-overlay">
   <div class="hero-content">
@@ -149,12 +152,26 @@
   </div>
 
   <!-- Video -->
-  <div class="image-box">
+  <!-- <div class="video-box">
     <video class="section-video " controls autoplay muted loop>
-      <source src="assets/Video_Events.mp4" type="video/mp4">
+      <source src="https://videos.sproutvideo.com/embed/a791d5b51510e7c22e/8899785064e79880" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-  </div>
+  </div> -->
+
+  <!-- iframe -->
+
+  <div class="video-box">
+  <iframe 
+  width="1182"
+  height="554"
+    class="section-video" 
+    src="https://videos.sproutvideo.com/embed/a791d5b51510e7c22e/8899785064e79880" 
+    frameborder="0" 
+    allow="autoplay; fullscreen" 
+    allowfullscreen>
+  </iframe>
+</div>
 
   </div>
 </section>
