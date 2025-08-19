@@ -236,10 +236,10 @@ margin: 0px;
 
   .section-video {
   width: 1182px;
-  height: 554px;
-  border: 16px solid black;
-  border-radius: 45px;
-  object-fit: cover;
+  height: 554px !important;
+  border: 16px solid black !important;
+  border-radius: 45px !important;
+  object-fit: cover !important;
   
   }
   video {
